@@ -101,7 +101,7 @@
       </ul>
     </div>
     <div class="ui-layout-east" style="text-align:right;">
-      <div style="margin: 50px 10px 5px 0px;">
+      <div id="personal-bar">
         <?php 
           $user = Yii::app()->user;
           if(!$user->isGuest) {
@@ -175,13 +175,11 @@
 
 <div id="dropdown-profile" class="dropdown dropdown-tip has-icons dropdown-anchor-right">
   <ul class="dropdown-menu">
-    <li class="undo"><a href="#">Undo</a></li>
-    <li class="redo"><a href="#">Redo</a></li>
+    <li class="edit"><a href="#">修改个人信息</a></li>
+    <li class="passwd"><a href="#">修改密码</a></li>
     <li class="dropdown-divider"></li>
-    <li class="cut"><a href="#">Cut</a></li>
-    <li class="copy"><a href="#">Copy</a></li>
-    <li class="paste"><a href="#">Paste</a></li>
-    <li class="delete"><a href="#">Delete</a></li>
+    <li class="reboot"><a href="#">重启系统</a></li>
+    <li class="logout"><a href="index.php?r=site/logout">注销</a></li>
   </ul>
 </div>
 

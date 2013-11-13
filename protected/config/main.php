@@ -89,6 +89,14 @@ return array(
       'autoCreateSessionTable'=>true,  
       'connectionID'=>'db',  
     ), 
+    'settings'=>array(
+      'class'=>'CApplicationSettings',
+      'settingsIdColumn'=>'name', 
+      'applications' => array(
+        'main'=>array(
+        ),
+      )
+    ),
   ),
 
   // application-level parameters that can be accessed

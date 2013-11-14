@@ -19,7 +19,7 @@ class User extends CActiveRecord
       array('username, password, email', 'required'),
       array('username', 'unique'),
       array('email', 'email'),
-      array('id, username, password, email', 'safe'),
+      // array('id, username, password, email', 'safe'),
       array('repeatpassword', 'compare', 'compareAttribute'=>'password', 'message'=>"两次输入密码不一致")
     );
   }

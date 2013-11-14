@@ -11,7 +11,9 @@ class m131111_121838_users extends EDbMigration
       'id' => 'pk',
       'username' => 'varchar(15) NOT NULL', 
       'password' => 'varchar(25) NOT NULL', 
-      'email' => 'varchar(128) NOT NULL', 
+      'email' => 'varchar(128)', 
+      'last_logon' => 'varchar(128)', 
+      'last_ip_address' => 'varchar(20)'
     ));
     $admin=new User;
     $admin->username="admin";

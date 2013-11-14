@@ -11,7 +11,7 @@ html, body {
 }
 
 #container {
-	width: 100%;
+  width: 100%;
   height: 100%;
   margin: -1px auto;
   background: #fff;
@@ -19,65 +19,76 @@ html, body {
   _width:600px; /* min-width for IE6 */boot/
 }
 
-#footer
+#page
 {
-	font-size: 0.8em;
-	text-align: center;
-	border-top: 1px solid #C9E0ED;
+  height: 100%;
 }
 
-#logo
+#footer
 {
-	padding: 10px 20px;
-	font-size: 200%;
+  font-size: 0.8em;
+  text-align: center;
+  border-top: 1px solid #C9E0ED;
 }
 
 #nav-sidebar
 {
-	border-top: 1px solid #C9E0ED;
+  border-top: 1px solid #C9E0ED;
+  background: #f0f0f0;
+}
+
+#personal-bar
+{
+  margin: 50px 10px 5px 0px;
+  font-size: 1.0em;
+}
+
+#personal-bar A
+{
+  text-decoration:none;
 }
 
 div.flash-error, div.flash-notice, div.flash-success
 {
-	padding:.8em;
-	margin-bottom:1em;
-	border:2px solid #ddd;
+  padding:.8em;
+  margin-bottom:1em;
+  border:2px solid #ddd;
 }
 
 div.flash-error
 {
-	background:#FBE3E4;
-	color:#8a1f11;
-	border-color:#FBC2C4;
+  background:#FBE3E4;
+  color:#8a1f11;
+  border-color:#FBC2C4;
 }
 
 div.flash-notice
 {
-	background:#FFF6BF;
-	color:#514721;
-	border-color:#FFD324;
+  background:#FFF6BF;
+  color:#514721;
+  border-color:#FFD324;
 }
 
 div.flash-success
 {
-	background:#E6EFC2;
-	color:#264409;
-	border-color:#C6D880;
+  background:#E6EFC2;
+  color:#264409;
+  border-color:#C6D880;
 }
 
 div.flash-error a
 {
-	color:#8a1f11;
+  color:#8a1f11;
 }
 
 div.flash-notice a
 {
-	color:#514721;
+  color:#514721;
 }
 
 div.flash-success a
 {
-	color:#264409;
+  color:#264409;
 }
 
 .pane {
@@ -88,7 +99,6 @@ div.flash-success a
   color: #08C;
   cursor: pointer;
   padding: 4px;
-  font-size: 14px;
   border-radius: 4px;
 }
 
@@ -116,4 +126,3 @@ div.flash-success a
   background-image: url(/images/bg.png);
   background-repeat: repeat-x;
 }
-

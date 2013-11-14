@@ -26,6 +26,7 @@ return array(
       // If removed, Gii defaults to localhost only. Edit carefully to taste.
       'ipFilters'=>array('127.0.0.1','::1'),
     ),
+    // FIXME(ZOwl): 
     'user'=>array(
       'debug'=>true
     )
@@ -36,6 +37,7 @@ return array(
     'user'=>array(
       // enable cookie-based authentication
       'allowAutoLogin'=>true,
+      'class'=>'WebUser', 
       'loginUrl' => array('site/login'), 
     ),
     'authManager'=>array(
@@ -89,6 +91,14 @@ return array(
       'autoCreateSessionTable'=>true,  
       'connectionID'=>'db',  
     ), 
+    'settings'=>array(
+      'class'=>'CApplicationSettings',
+      'settingsIdColumn'=>'name', 
+      'applications' => array(
+        'main'=>array(
+        ),
+      )
+    ),
   ),
 
   // application-level parameters that can be accessed

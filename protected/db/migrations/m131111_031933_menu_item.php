@@ -26,22 +26,18 @@ class m131111_031933_menu_item extends EDbMigration
     $menu_sc_item1->uri='site/dashboard';
 
     $menu_sc_item2=new MenuItem;
+    $menu_sc_item2->uri='op=test';
     $menu_sc_item2->title='快捷配置';
 
-    $menu_sc_item2=new MenuItem;
-    $menu_sc_item2->uri='op=test';
-    $menu_sc_item2->title='配置';
-
     $menu_sc_item3=new MenuItem;
-    $menu_sc_item3->title='管理员设置';
-    $menu_sc_item3->uri='account/index';
+    $menu_sc_item3->title='配置';
 
     $menu_sc_item4=new MenuItem;
-    $menu_sc_item4->title='维护';
+    $menu_sc_item4->title='管理员设置';
+    $menu_sc_item4->uri='account/index';
 
     $menu_sc_item5=new MenuItem;
-    $menu_sc_item5->title='权限管理';
-    $menu_sc_item5->uri='role/index';
+    $menu_sc_item5->title='维护';
 
     $menu_sc_item1->appendTo($root_system_config);
     $menu_sc_item1->saveNode();
@@ -51,7 +47,7 @@ class m131111_031933_menu_item extends EDbMigration
     $menu_sc_item3->saveNode();
     $menu_sc_item4->insertAfter($menu_sc_item3);
     $menu_sc_item4->saveNode();
-    $menu_sc_item5->insertAfter($menu_sc_item4);
+    $menu_sc_item5->insertAfter($menu_sc_item3);
     $menu_sc_item5->saveNode();
 
     $root_network_management=new MenuItem;

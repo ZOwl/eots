@@ -47,8 +47,13 @@
           lis.addClass('active');
 
           var uri = li.attr('uri');
-          if(uri)
-            $("#frame").attr("src", "index.php?r=" + uri);
+          if(uri) {
+            if(uri.substr(0, 3) == "op=") {
+              $("#frame").attr("src", "/cgi-bin/webui?" + uri);
+            } else {
+              $("#frame").attr("src", "index.php?r=" + uri);
+            }
+          }
         },
         onToggleBefore: function(submenu, opening) {
           var idx = submenu.attr('data-index');
@@ -97,6 +102,10 @@
         <li><a href='#' title='Pictures'><img src='images/uploads.png' alt='' /></a></li>
         <li><a href='#' title='Music'><img src='images/uploads.png' alt='' /></a></li>
         <li><a href='#' title='Videos'><img src='images/uploads.png' alt='' /></a></li>
+        <li><a href='#' title='Uploads'><img src='images/uploads.png' alt='' /></a></li>
+        <li><a href='#' title='Uploads'><img src='images/uploads.png' alt='' /></a></li>
+        <li><a href='#' title='Uploads'><img src='images/uploads.png' alt='' /></a></li>
+        <li><a href='#' title='Uploads'><img src='images/uploads.png' alt='' /></a></li>
         <li><a href='#' title='Uploads'><img src='images/uploads.png' alt='' /></a></li>
       </ul>
     </div>

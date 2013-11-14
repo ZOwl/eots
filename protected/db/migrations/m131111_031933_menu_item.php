@@ -29,6 +29,7 @@ class m131111_031933_menu_item extends EDbMigration
     $menu_sc_item2->title='快捷配置';
 
     $menu_sc_item2=new MenuItem;
+    $menu_sc_item2->uri='op=test';
     $menu_sc_item2->title='配置';
 
     $menu_sc_item3=new MenuItem;
